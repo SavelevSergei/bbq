@@ -10,6 +10,7 @@ import Rails from "@rails/ujs"
 Rails.start()
 // ActiveStorage.start()
 
+import 'bootstrap'
 import '../styles/application'
 
 const images = require.context("../images", true)
