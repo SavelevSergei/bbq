@@ -1,4 +1,5 @@
 module ApplicationHelper
+
   def bootstrap_class_for(flash_type)
     {
       success: 'alert-success',
@@ -16,5 +17,9 @@ module ApplicationHelper
       end)
     end
     nil
+  end
+
+  def user_avatar(user)
+    asset_path('bender.png')
   end
 end

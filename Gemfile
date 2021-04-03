@@ -9,6 +9,7 @@ gem 'puma', '~> 5.0'
 gem 'webpacker', '~> 5.0'
 gem 'bootsnap', '~> 1.1', '>= 1.1.7'
 gem 'listen', '~> 3.1.5'
+gem 'devise'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
