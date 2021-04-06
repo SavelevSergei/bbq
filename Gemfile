@@ -10,6 +10,8 @@ gem 'webpacker', '~> 5.0'
 gem 'bootsnap', '~> 1.1', '>= 1.1.7'
 gem 'listen', '~> 3.1.5'
 gem 'devise'
+gem 'uglifier'
+gem 'jquery-rails'
 
 group :production do
   gem 'pg'
