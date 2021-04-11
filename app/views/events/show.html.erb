@@ -38,6 +38,7 @@
         <h4>Зовет:</h4>
         <p><%= render partial: 'users/user', object: @event.user %></p>
       </div>
+
       <div class="event-subscriptions">
         <h4>Пойдут:</h4>
         <div>
@@ -46,12 +47,16 @@
           </p>
         </div>
       </div>
+
+      <% unless current_user == @event.user %>
+
       <div class="event-subscription-form">
         <h4>Я пойду:</h4>
         <div>
           <%= render partial: 'subscriptions/form', locals: { subscription: @new_subscription || @event.subscriptions.build } %>
         </div>
       </div>
+      <% end %>
     </div>
 
   </div>

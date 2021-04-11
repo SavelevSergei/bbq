@@ -40,6 +40,7 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+      event_owner_subscription: 'Вы не можете подписаться на своё событие'
   event_errors:
     messages:
       one: 'В вашей форме %{count} ошибка'
