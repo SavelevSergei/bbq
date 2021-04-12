@@ -14,6 +14,12 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+    errors:
+      models:
+        subscription:
+          attributes:
+            user:
+              event_owner_subscription: 'Вы не можете подписаться на своё событие'
   controllers:
     events:
       created: 'Мероприятие успешно создано.'
@@ -40,7 +46,7 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
-      event_owner_subscription: 'Вы не можете подписаться на своё событие'
+      event_owner_subscription: ""
   event_errors:
     messages:
       one: 'В вашей форме %{count} ошибка'

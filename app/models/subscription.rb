@@ -31,7 +31,7 @@ class Subscription < ApplicationRecord
 
   def event_owner_subscription?
     if event.user == user
-      errors.add("#{user_name}", I18n.t('subscriptions.subscription.event_owner_subscription'))
+      errors.add(:user, :event_owner_subscription)
     end
   end
 end
