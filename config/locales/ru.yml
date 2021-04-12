@@ -20,6 +20,8 @@ ru:
           attributes:
             user:
               event_owner_subscription: 'Вы не можете подписаться на своё событие'
+            user_email:
+              event_owner_email_subscription: 'Для подписки зайдите под своим email'
   controllers:
     events:
       created: 'Мероприятие успешно создано.'
