@@ -2,10 +2,10 @@ module ApplicationHelper
 
   def bootstrap_class_for(flash_type)
     {
-      success: 'alert-success',
-      error: 'alert-danger',
-      alert: 'alert-warning',
-      notice: 'alert-success'
+    success: 'alert-success',
+    error: 'alert-danger',
+    alert: 'alert-warning',
+    notice: 'alert-success'
     }.stringify_keys[flash_type.to_s] || flash_type.to_s
   end
 
@@ -20,7 +20,43 @@ module ApplicationHelper
   end
 
   def user_avatar(user)
-    asset_path('bender.png')
+    if user.avatar?
+      user.avatar.url
+    else
+      asset_path('bender.png')
+    end
+  end
+
+  # Аналогично user_avatar, только возвращает миниатюрную версию
+  def user_avatar_thumb(user)
+    if user.avatar.file.present?
+      user.avatar.thumb.url
+    else
+      asset_path('bender.png')
+    end
+  end
+
+  # Возвращает адерс рандомной фотки события, если есть хотя бы одна. Или ссылку
+  # на дефолтную картинку.
+  def event_photo(event)
+    photos = event.photos.persisted
+
+    if photos.any?
+      photos.sample.photo.url
+    else
+      asset_path('event.jpg')
+    end
+  end
+
+  # Аналогично event_photo, только возвращает миниатюрную версию
+  def event_thumb(event)
+    photos = event.photos.persisted
+
+    if photos.any?
+      photos.sample.photo.thumb.url
+    else
+      asset_path('event_thumb.jpg')
+    end
   end
 
   def fa_icon(icon_class)

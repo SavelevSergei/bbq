@@ -3,10 +3,14 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
+      subscription: 'Подписка'
+      comment: 'Комментарий'
+      photo: 'Фотография'
     attributes:
       user:
         email: 'Email'
         name: 'Имя'
+        avatar: 'Аватарка'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
       event:
@@ -14,6 +18,14 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+      comment:
+        user_name: 'Ваше имя'
+        body: 'Комментарий'
+      subscription:
+        user_name: 'Ваше имя'
+        user_email: 'Ваш email'
+      photo:
+        photo: 'Фотография'
     errors:
       models:
         subscription:
@@ -22,6 +34,7 @@ ru:
               event_owner_subscription: 'Вы не можете подписаться на своё событие'
             user_email:
               event_owner_email_subscription: 'Для подписки зайдите под своим email'
+
   controllers:
     events:
       created: 'Мероприятие успешно создано.'
@@ -39,6 +52,11 @@ ru:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
       error: 'Подписка/отписка не сработала'
+    photos:
+      error: 'Что-то не так с фоткой'
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фотку'
+
   app:
     name: 'Шашлыки'
     company: 'Отличная компания'
