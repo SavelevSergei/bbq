@@ -18,6 +18,7 @@ gem 'rails-i18n', '~> 6.0'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
+gem 'mailjet'
 
 group :production do
   gem 'pg'
@@ -26,4 +27,6 @@ end
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'letter_opener'
+  gem 'dotenv-rails'
 end

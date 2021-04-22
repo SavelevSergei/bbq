@@ -6,6 +6,7 @@ ru:
       subscription: 'Подписка'
       comment: 'Комментарий'
       photo: 'Фотография'
+
     attributes:
       user:
         email: 'Email'
@@ -13,19 +14,24 @@ ru:
         avatar: 'Аватарка'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
+
       event:
         title: 'Название'
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+
       comment:
         user_name: 'Ваше имя'
         body: 'Комментарий'
+
       subscription:
         user_name: 'Ваше имя'
         user_email: 'Ваш email'
+
       photo:
         photo: 'Фотография'
+
     errors:
       models:
         subscription:
@@ -42,16 +48,20 @@ ru:
       destroyed: 'Мероприятие успешно удалено.'
       edit:
         are_you_sure: 'Вы уверены?'
+
     users:
       updated: 'Пользователь был успешно обновлён.'
+
     comments:
       error: 'Ошибка с комментарием'
       destroyed: 'Коммент удалён'
       created: 'Коммент добавлен'
+
     subscriptions:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
       error: 'Подписка/отписка не сработала'
+
     photos:
       error: 'Что-то не так с фоткой'
       created: 'Вы добавили фотографию к событию'
@@ -60,14 +70,33 @@ ru:
   app:
     name: 'Шашлыки'
     company: 'Отличная компания'
+
   comments:
     comment:
       destroy_confirm: 'Вы точно хотите удалить комметнарий?'
+
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+
   event_errors:
     messages:
       one: 'В вашей форме %{count} ошибка'
       few: 'В вашей форме %{count} ошибки'
       many: 'В вашей форме %{count} ошибок'
+
+  event_mailer:
+    comment:
+      title: 'Новый комментарий'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    subscription:
+      title: 'Новая подписка'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
