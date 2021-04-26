@@ -12,3 +12,4 @@ Rails.start()
 
 import 'bootstrap/dist/js/bootstrap'
 import '../../assets/stylesheets/application.scss'
+import '../map'
