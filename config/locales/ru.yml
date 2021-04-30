@@ -20,6 +20,7 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+        pincode: 'Пинкод доступа'
 
       comment:
         user_name: 'Ваше имя'
@@ -46,6 +47,7 @@ ru:
       created: 'Мероприятие успешно создано.'
       updated: 'Мероприятие успешно обновлено.'
       destroyed: 'Мероприятие успешно удалено.'
+      wrong_pincode: 'Неверный пинкод!'
       edit:
         are_you_sure: 'Вы уверены?'
 
@@ -84,6 +86,10 @@ ru:
       one: 'В вашей форме %{count} ошибка'
       few: 'В вашей форме %{count} ошибки'
       many: 'В вашей форме %{count} ошибок'
+
+  event:
+    form:
+      pincode: 'Пин-код'
 
   event_mailer:
     comment:
