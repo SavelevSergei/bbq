@@ -1,5 +1,4 @@
 ymaps.ready(init);
-var myMap;
 
 function init(){
 
@@ -9,7 +8,7 @@ function init(){
 
   address = document.getElementById('map').getAttribute('data-address');
 
-  myMap = new ymaps.Map("map", {
+  const myMap = new ymaps.Map("map", {
     center: [59.939, 30.315],
     zoom: 10
   });
